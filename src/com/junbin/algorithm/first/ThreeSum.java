@@ -41,10 +41,13 @@ public class ThreeSum {
         int len = nums.length;
         for (int i = 0; i < len; ++i) {
             //排序后如果第一个（最小的）大于0，则和必然大于0，如果最后一个（最大的）小于0同理
-            if (nums[i] > 0 || nums[len - 1] < 0) return lists;
+            if (nums[i] > 0 || nums[len - 1] < 0) {
+                return lists;
+            }
             //如果当前元素和它前面的元素相同则说明处理过同样的值了，需要跳过
-            if (i > 0 && nums[i] == nums[i - 1]) continue;
-
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
             int curr = nums[i];
             int L = i + 1, R = len - 1;
             while (L < R) {
@@ -56,8 +59,12 @@ public class ThreeSum {
                     list.add(nums[R]);
                     lists.add(list);
                     // 这里如果下一位重复的话，即使算两种，还是会和上一种答案重复，所以需要去掉
-                    while (L < R && nums[L + 1] == nums[L]) ++L;
-                    while (L < R && nums[R - 1] == nums[R]) --R;
+                    while (L < R && nums[L + 1] == nums[L]) {
+                        ++L;
+                    }
+                    while (L < R && nums[R - 1] == nums[R]) {
+                        --R;
+                    }
                     ++L;
                     --R;
                 } else if (tmp < 0) {
