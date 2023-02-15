@@ -1,4 +1,4 @@
-package com.junbin.algorithm.first;
+package com.junbin.algorithm.first.twenty;
 
 import java.util.HashSet;
 import java.util.Set;

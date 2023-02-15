@@ -1,4 +1,4 @@
-package com.junbin.algorithm.first;
+package com.junbin.algorithm.first.twenty;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,7 +29,6 @@ import java.util.List;
  * (3) 若和小于 0，说明 nums[L] 太小，L右移.
  *
  * @author junbin.wang
- * @description: TODO
  * @date 2023/2/13下午9:33
  */
 public class ThreeSum {

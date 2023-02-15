@@ -1,4 +1,4 @@
-package com.junbin.algorithm.first;
+package com.junbin.algorithm.first.twenty;
 
 import com.junbin.model.ListNode;
 
@@ -17,7 +17,6 @@ import com.junbin.model.ListNode;
  * 4、将上一轮翻转后的尾结点指向下一轮翻转后的头节点，即将每一轮翻转的k的节点连接起来。
  *
  * @author junbin.wang
- * @description: TODO
  * @date 2023/2/13下午9:32
  */
 public class ReverseKGroup {

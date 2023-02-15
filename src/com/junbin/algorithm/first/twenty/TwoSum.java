@@ -1,4 +1,4 @@
-package com.junbin.algorithm.first;
+package com.junbin.algorithm.first.twenty;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +19,6 @@ import java.util.Map;
  * 如果它存在，那我们已经找到了对应解，并立即将其返回。
  *
  * @author junbin.wang
- * @description: TODO
  * @date 2023/2/13下午9:51
  */
 public class TwoSum {

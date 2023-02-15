@@ -1,4 +1,4 @@
-package com.junbin.algorithm.first;
+package com.junbin.algorithm.first.twenty;
 
 /**
  * 最大子序和
@@ -15,7 +15,6 @@ package com.junbin.algorithm.first;
  * 因此算法的时间和空间复杂度都很小 。
  *
  * @author junbin.wang
- * @description: TODO
  * @date 2023/2/13下午9:35
  */
 public class MaxSubArray {

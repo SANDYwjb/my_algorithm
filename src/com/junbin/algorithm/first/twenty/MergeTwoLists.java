@@ -1,4 +1,4 @@
-package com.junbin.algorithm.first;
+package com.junbin.algorithm.first.twenty;
 
 import com.junbin.model.ListNode;
 
@@ -13,7 +13,6 @@ import com.junbin.model.ListNode;
  * 最后还需要分别判断l1和l2是否已经遍历完。如果有没有遍历完的，直接将其加入res即可。
  *
  * @author junbin.wang
- * @description: TODO
  * @date 2023/2/13下午9:36
  */
 public class MergeTwoLists {
