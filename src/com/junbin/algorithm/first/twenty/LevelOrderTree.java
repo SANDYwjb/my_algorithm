@@ -1,5 +1,7 @@
 package com.junbin.algorithm.first.twenty;
 
+import com.junbin.model.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -14,18 +16,18 @@ import java.util.Queue;
  * @date 2023/2/14下午9:10
  */
 public class LevelOrderTree {
-    public List<List<Integer>> levelOrder(ZigzagLevelOrder.TreeNode root) {
+    public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> ret = new ArrayList<List<Integer>>();
         if (root == null) {
             return ret;
         }
-        Queue<ZigzagLevelOrder.TreeNode> queue = new LinkedList<ZigzagLevelOrder.TreeNode>();
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.offer(root);
         while (!queue.isEmpty()) {
             // 用以存放当前这一层的所有节点值
             List<Integer> level = new ArrayList<Integer>();
             for (int i = 1; i <= queue.size(); ++i) {
-                ZigzagLevelOrder.TreeNode node = queue.poll();
+                TreeNode node = queue.poll();
                 level.add(node.val);
                 if (node.left != null) {
                     queue.offer(node.left);

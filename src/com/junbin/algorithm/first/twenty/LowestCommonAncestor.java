@@ -1,5 +1,7 @@
 package com.junbin.algorithm.first.twenty;
 
+import com.junbin.model.TreeNode;
+
 /**
  * 二叉树的最近公共祖先
  * 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
@@ -26,15 +28,15 @@ package com.junbin.algorithm.first.twenty;
  * @date 2023/2/14下午9:16
  */
 public class LowestCommonAncestor {
-    public ZigzagLevelOrder.TreeNode lowestCommonAncestor(ZigzagLevelOrder.TreeNode root, ZigzagLevelOrder.TreeNode p,
-                                                          ZigzagLevelOrder.TreeNode q) {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p,
+                                                          TreeNode q) {
         if (root == null || root == p || root == q) {
             // 这里因为p或者q只要有一个是根节点，那不用说，祖先肯定就是root了。
             // 这里的root节点不是整棵树的根节点，在递归里是当前子树的根节点。道理是一样的。
             return root;
         }
-        ZigzagLevelOrder.TreeNode left = lowestCommonAncestor(root.left, p, q);
-        ZigzagLevelOrder.TreeNode right = lowestCommonAncestor(root.right, p, q);
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
         if (left == null) {
             return right;
         }

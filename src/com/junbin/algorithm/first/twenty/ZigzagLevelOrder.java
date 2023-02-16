@@ -1,5 +1,7 @@
 package com.junbin.algorithm.first.twenty;
 
+import com.junbin.model.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,26 +17,6 @@ import java.util.List;
  * @date 2023/2/14下午9:08
  */
 public class ZigzagLevelOrder {
-
-    public class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
 
         List<List<Integer>> res = new ArrayList<>();
