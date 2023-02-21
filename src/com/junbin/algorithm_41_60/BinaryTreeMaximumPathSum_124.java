@@ -39,7 +39,7 @@ import com.junbin.model.TreeNode;
  * @author junbin.wang
  * @date 2023/2/19下午8:09
  */
-public class BinaryTreeMaximumPathSum {
+public class BinaryTreeMaximumPathSum_124 {
     int maxSum = Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root) {
