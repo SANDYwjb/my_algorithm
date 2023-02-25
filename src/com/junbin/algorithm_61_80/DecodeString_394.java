@@ -13,7 +13,6 @@ import java.util.Stack;
  * 输入：s = "2[abc]3[cd]ef"
  * 输出："abcabccdcdcdef"
  * <p>
- * 思路：
  *
  * @author junbin.wang
  * @date 2023/2/24上午8:30
